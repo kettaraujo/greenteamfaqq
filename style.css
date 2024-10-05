@@ -1,0 +1,140 @@
+/* Formatação*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./img/Vector\ 2\(1\).png);
+    background-color: rgb(199, 233, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease, color 1s ease;
+    height: 100vh;
+}
+
+/* Estilo do body no modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: black;
+}
+
+
+/* Estilo do card no modo escuro */
+.card.dark-mode {
+    background-color: #555555;
+    color: white;
+}
+
+/* Estilo do botão dark*/
+#toggle-dark-mode {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: rgb(47, 255, 78);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão no modo escuro */
+body.dark-mode #toggle-dark-mode {
+    background-color: #555555;
+    color: white;
+}
+
+/* Estilo do Card*/
+.card {
+    background-color: white;
+    width: 800px;
+    transition: background-color 1s ease, color 1s ease;
+    height: 70vh;
+    max-width: 112vh;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 30px rgb(0, 0, 0, 0, 1);
+    overflow: hidden; /* não deixa o conteúdo sair de dentro da div*/
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    gap: 8px;
+}
+
+/* Estilo do */
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 1200;
+    font-style: normal;
+}
+
+/* Estilo linhas*/
+.item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+/* Estilo perguntas*/
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Estilo botão de +*/
+.plus {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Estilo imagem*/
+img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Estilo paragrafo*/
+p {
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+/* Estilo inicial para todas as respostas */
+.mensagem {
+    opacity: 0;
+    transition: opacity 1s ease;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Classe que torna a resposta visível*/
+.mensagem.mostrar {
+    display: block;
+    opacity: 1;
+}
+
+
+/*responsividade*/
+
+@media (max-width: 375px){
+        .card{
+            width: 200px;
+            height: 70vh;
+        }
+    }
+
+@media (max-width: 768px) {
+        .card{
+            width: 350px;
+            height: 70vh;
+        }
+    }
