@@ -22,7 +22,7 @@ The primary goal of the project was to create a Frequently Asked Questions (**FA
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/kettaraujo/greenteamfaq.git
    ```
 2. Open the `index.html` file in your browser.
 
