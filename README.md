@@ -1,6 +1,6 @@
 # FAQ Website - Project for Selection Process
 
-This repository contains the source code for the website developed as part of a challenging selection process for my organization. This project was instrumental in my selection and provided an enriching opportunity to showcase my web development skills.
+This repository contains the source code for the website developed as part of a challenging selection process for my organization Green Team Hacker Club. This project was instrumental in my selection and provided an enriching opportunity to showcase my web development skills.
 
 ## Project Description
 The primary goal of the project was to create a Frequently Asked Questions (**FAQ**) page for the organization with:
